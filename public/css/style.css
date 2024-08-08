@@ -72,10 +72,15 @@ input[type='checkbox']:checked ~ * {
   font-family: Poppins500, sans-serif;
 }
 
+body {
+  display: flex;
+}
+
 #body-container {
   position: absolute;
   top: 0;
-  width: 100%;
+  left: 0;
+  width: 100vw;
   background-color: var(--main-bg-color);
 }
 
@@ -283,7 +288,7 @@ input[type='checkbox']:checked ~ * {
   margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 430px) {
+@media only screen and (min-width: 770px) {
   #toggle-button {
     width: 80px;
     height: 80px;
@@ -394,13 +399,12 @@ input[type='checkbox']:checked ~ * {
   }
 
   #tabs-content {
-    width: 757px;
-    height: 826px;
+    width: 757px; 
+    gap: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
-    row-gap: 0px;
     align-items: start;
     margin: 0 auto 78px auto;
   }
